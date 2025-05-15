@@ -1,0 +1,15 @@
+dev:
+  outputs:
+    local:
+      type: dremio
+      software_host: localhost
+      port: 9047
+      user: admin
+      password: admin1234
+      use_ssl: false
+      threads: 1
+      dremio_space: lakehouse
+      dremio_space_folder: warehouse
+      object_storage_path: warehouse
+      object_storage_source: lakehouse
+  target: local

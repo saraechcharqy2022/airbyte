@@ -1,0 +1,1200 @@
+[2025-05-13T08:55:25.853+0000] {processor.py:186} INFO - Started process (PID=196) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:55:25.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:55:25.862+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:55:25.861+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:55:25.945+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:55:25.929+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:55:25.946+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:55:26.044+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.207 seconds
+[2025-05-13T08:55:56.447+0000] {processor.py:186} INFO - Started process (PID=207) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:55:56.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:55:56.454+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:55:56.454+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:55:56.482+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:55:56.474+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:55:56.484+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:55:56.533+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.098 seconds
+[2025-05-13T08:56:27.040+0000] {processor.py:186} INFO - Started process (PID=217) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:56:27.042+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:56:27.047+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:56:27.046+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:56:27.076+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:56:27.068+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:56:27.078+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:56:27.141+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.113 seconds
+[2025-05-13T08:56:57.360+0000] {processor.py:186} INFO - Started process (PID=227) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:56:57.380+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:56:57.411+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:56:57.410+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:56:57.496+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:56:57.481+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:56:57.499+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:56:57.760+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.442 seconds
+[2025-05-13T08:57:28.636+0000] {processor.py:186} INFO - Started process (PID=238) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:57:28.638+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:57:28.644+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:57:28.643+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:57:28.671+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:57:28.664+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:57:28.673+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:57:28.895+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.275 seconds
+[2025-05-13T08:58:00.623+0000] {processor.py:186} INFO - Started process (PID=249) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:58:00.814+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:58:00.856+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:58:00.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:58:01.086+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:58:01.080+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:58:01.088+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:58:03.725+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 3.265 seconds
+[2025-05-13T08:58:35.069+0000] {processor.py:186} INFO - Started process (PID=260) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:58:35.071+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:58:35.076+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:58:35.075+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:58:35.097+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:58:35.092+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:58:35.098+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:58:35.259+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.390 seconds
+[2025-05-13T08:59:05.478+0000] {processor.py:186} INFO - Started process (PID=271) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:59:05.481+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:59:05.487+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:59:05.486+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:59:05.559+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:59:05.553+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:59:05.570+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:59:05.783+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.330 seconds
+[2025-05-13T08:59:36.606+0000] {processor.py:186} INFO - Started process (PID=283) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:59:36.608+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T08:59:36.613+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:59:36.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:59:36.638+0000] {logging_mixin.py:190} INFO - [2025-05-13T08:59:36.633+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T08:59:36.640+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T08:59:36.898+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.305 seconds
+[2025-05-13T09:00:07.062+0000] {processor.py:186} INFO - Started process (PID=294) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:00:07.067+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T09:00:07.074+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:00:07.074+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:00:07.111+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:00:07.106+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T09:00:07.113+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:00:07.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.209 seconds
+[2025-05-13T09:00:39.202+0000] {processor.py:186} INFO - Started process (PID=305) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:00:39.273+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T09:00:39.284+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:00:39.284+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:00:39.307+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:00:39.302+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T09:00:39.309+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:00:39.572+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.382 seconds
+[2025-05-13T09:01:10.630+0000] {processor.py:186} INFO - Started process (PID=316) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:01:10.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T09:01:10.641+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:01:10.640+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:01:10.673+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:01:10.667+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T09:01:10.674+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:01:10.732+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.114 seconds
+[2025-05-13T09:01:40.833+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:01:40.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T09:01:40.843+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:01:40.842+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:01:40.879+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:01:40.871+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T09:01:40.881+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:01:40.936+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.115 seconds
+[2025-05-13T09:02:11.638+0000] {processor.py:186} INFO - Started process (PID=338) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:02:11.641+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T09:02:11.648+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:02:11.647+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:02:11.674+0000] {logging_mixin.py:190} INFO - [2025-05-13T09:02:11.669+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T09:02:11.677+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T09:02:11.741+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.117 seconds
+[2025-05-13T10:32:15.433+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:32:15.443+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:32:15.473+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:32:15.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:32:15.681+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:32:15.650+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:32:15.682+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:32:15.875+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.506 seconds
+[2025-05-13T10:32:46.574+0000] {processor.py:186} INFO - Started process (PID=203) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:32:46.577+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:32:46.582+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:32:46.581+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:32:46.619+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:32:46.599+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:32:46.622+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:32:46.733+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.171 seconds
+[2025-05-13T10:33:17.332+0000] {processor.py:186} INFO - Started process (PID=214) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:33:17.379+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:33:17.398+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:33:17.397+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:33:17.425+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:33:17.420+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:33:17.426+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:33:17.525+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.205 seconds
+[2025-05-13T10:33:49.101+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:33:49.151+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:33:49.162+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:33:49.161+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:33:49.272+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:33:49.266+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:33:49.275+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:33:49.602+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.516 seconds
+[2025-05-13T10:34:20.485+0000] {processor.py:186} INFO - Started process (PID=236) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:34:20.493+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:34:20.498+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:34:20.498+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:34:20.525+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:34:20.518+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:34:20.526+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:34:20.574+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.099 seconds
+[2025-05-13T10:34:50.742+0000] {processor.py:186} INFO - Started process (PID=247) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:34:50.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:34:50.751+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:34:50.750+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:34:50.775+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:34:50.770+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:34:50.777+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:34:51.081+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.352 seconds
+[2025-05-13T10:35:21.505+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:35:21.540+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:35:21.620+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:35:21.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:35:21.642+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:35:21.637+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:35:21.643+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:35:22.268+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.776 seconds
+[2025-05-13T10:35:53.644+0000] {processor.py:186} INFO - Started process (PID=269) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:35:53.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:35:53.669+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:35:53.667+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:35:53.829+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:35:53.815+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:35:53.831+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:35:54.066+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.489 seconds
+[2025-05-13T10:36:26.366+0000] {processor.py:186} INFO - Started process (PID=280) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:36:26.370+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:36:26.388+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:36:26.384+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:36:26.482+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:36:26.459+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:36:26.485+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:36:27.407+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 1.318 seconds
+[2025-05-13T10:36:59.583+0000] {processor.py:186} INFO - Started process (PID=291) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:36:59.608+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:36:59.619+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:36:59.618+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:36:59.853+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:36:59.678+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:36:59.855+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:37:00.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.881 seconds
+[2025-05-13T10:37:31.917+0000] {processor.py:186} INFO - Started process (PID=302) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:37:31.937+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:37:31.944+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:37:31.943+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:37:32.265+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:37:32.261+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:37:32.267+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:37:32.934+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 1.075 seconds
+[2025-05-13T10:38:03.937+0000] {processor.py:186} INFO - Started process (PID=312) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:38:03.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:38:03.952+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:38:03.949+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:38:04.153+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:38:04.146+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:38:04.156+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:38:04.311+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.389 seconds
+[2025-05-13T10:38:35.419+0000] {processor.py:186} INFO - Started process (PID=323) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:38:35.487+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:38:35.499+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:38:35.498+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:38:35.524+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:38:35.518+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:38:35.525+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:38:35.590+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.188 seconds
+[2025-05-13T10:39:06.028+0000] {processor.py:186} INFO - Started process (PID=334) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:39:06.029+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:39:06.038+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:39:06.037+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:39:06.068+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:39:06.063+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:39:06.070+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:39:06.238+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.228 seconds
+[2025-05-13T10:39:36.990+0000] {processor.py:186} INFO - Started process (PID=344) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:39:37.074+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:39:37.175+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:39:37.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:39:37.260+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:39:37.251+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:39:37.262+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:39:37.449+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.505 seconds
+[2025-05-13T10:40:07.765+0000] {processor.py:186} INFO - Started process (PID=355) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:40:07.767+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:40:07.772+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:40:07.771+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:40:07.797+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:40:07.793+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:40:07.799+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:40:07.988+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.263 seconds
+[2025-05-13T10:40:38.996+0000] {processor.py:186} INFO - Started process (PID=366) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:40:39.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:40:39.007+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:40:39.006+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:40:39.036+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:40:39.031+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:40:39.039+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:40:39.109+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.139 seconds
+[2025-05-13T10:41:09.650+0000] {processor.py:186} INFO - Started process (PID=377) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:41:09.657+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:41:09.662+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:41:09.661+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:41:09.687+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:41:09.682+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:41:09.688+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:41:10.018+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.381 seconds
+[2025-05-13T10:41:40.953+0000] {processor.py:186} INFO - Started process (PID=388) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:41:40.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:41:40.963+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:41:40.963+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:41:40.994+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:41:40.988+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:41:40.996+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:41:41.249+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.318 seconds
+[2025-05-13T10:42:11.602+0000] {processor.py:186} INFO - Started process (PID=399) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:42:11.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:42:11.613+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:42:11.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:42:11.654+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:42:11.648+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:42:11.655+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:42:11.705+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.126 seconds
+[2025-05-13T10:42:42.496+0000] {processor.py:186} INFO - Started process (PID=410) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:42:42.505+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:42:42.514+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:42:42.514+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:42:42.537+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:42:42.532+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:42:42.538+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:42:42.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.114 seconds
+[2025-05-13T10:43:13.538+0000] {processor.py:186} INFO - Started process (PID=421) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:43:13.541+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:43:13.547+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:43:13.547+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:43:13.575+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:43:13.568+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:43:13.578+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:43:13.641+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.119 seconds
+[2025-05-13T10:43:44.252+0000] {processor.py:186} INFO - Started process (PID=432) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:43:44.257+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:43:44.262+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:43:44.262+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:43:44.288+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:43:44.282+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:43:44.290+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:43:44.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.140 seconds
+[2025-05-13T10:44:15.067+0000] {processor.py:186} INFO - Started process (PID=443) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:44:15.069+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:44:15.074+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:44:15.074+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:44:15.099+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:44:15.092+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:44:15.100+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:44:15.152+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.101 seconds
+[2025-05-13T10:44:45.529+0000] {processor.py:186} INFO - Started process (PID=454) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:44:45.535+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:44:45.544+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:44:45.542+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:44:45.596+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:44:45.588+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:44:45.598+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:44:46.086+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.575 seconds
+[2025-05-13T10:45:16.661+0000] {processor.py:186} INFO - Started process (PID=465) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:45:16.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:45:16.672+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:45:16.672+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:45:16.734+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:45:16.723+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:45:16.739+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:45:17.089+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.446 seconds
+[2025-05-13T10:45:48.429+0000] {processor.py:186} INFO - Started process (PID=476) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:45:48.431+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:45:48.436+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:45:48.435+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:45:48.457+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:45:48.453+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:45:48.459+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:45:48.885+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.591 seconds
+[2025-05-13T10:46:19.988+0000] {processor.py:186} INFO - Started process (PID=487) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:46:20.044+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:46:20.051+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:46:20.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:46:20.085+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:46:20.078+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:46:20.087+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:46:20.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.334 seconds
+[2025-05-13T10:46:50.726+0000] {processor.py:186} INFO - Started process (PID=498) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:46:50.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T10:46:50.733+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:46:50.732+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:46:50.756+0000] {logging_mixin.py:190} INFO - [2025-05-13T10:46:50.751+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T10:46:50.757+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T10:46:50.924+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.218 seconds
+[2025-05-13T15:40:40.444+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:40:40.454+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T15:40:40.478+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:40:40.472+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:40:40.715+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:40:40.652+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T15:40:40.718+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:40:40.866+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.476 seconds
+[2025-05-13T15:41:11.938+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:41:11.941+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T15:41:11.946+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:41:11.945+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:41:11.969+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:41:11.963+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T15:41:11.970+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:41:12.021+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.099 seconds
+[2025-05-13T15:41:43.176+0000] {processor.py:186} INFO - Started process (PID=212) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:41:43.184+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T15:41:43.193+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:41:43.192+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:41:43.288+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:41:43.258+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T15:41:43.290+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:41:43.693+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 0.539 seconds
+[2025-05-13T15:42:14.882+0000] {processor.py:186} INFO - Started process (PID=223) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:42:14.886+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T15:42:14.983+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:42:14.982+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:42:15.228+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:42:15.214+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T15:42:15.230+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:42:15.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 1.074 seconds
+[2025-05-13T15:42:46.675+0000] {processor.py:186} INFO - Started process (PID=234) to work on /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:42:47.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/yellowtripdata_dag.py for tasks to queue
+[2025-05-13T15:42:47.368+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:42:47.367+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:42:47.405+0000] {logging_mixin.py:190} INFO - [2025-05-13T15:42:47.398+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/yellowtripdata_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 41, in <module>
+    yellowtripdata_dag()
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4307, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/yellowtripdata_dag.py", line 30, in yellowtripdata_dag
+    yellowtripdata_analytics = DbtTaskGroup(
+                               ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/airflow/task_group.py", line 28, in __init__
+    DbtToAirflowConverter.__init__(self, *args, **specific_kwargs(**kwargs))
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/converter.py", line 256, in __init__
+    project_config.validate_project()
+  File "/home/airflow/.local/lib/python3.12/site-packages/cosmos/config.py", line 263, in validate_project
+    raise CosmosValueError(f"Could not find {name} at {path}")
+cosmos.exceptions.CosmosValueError: Could not find dbt_project.yml at /opt/airflow/dbt/dev/dbt_project.yml
+[2025-05-13T15:42:47.475+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/yellowtripdata_dag.py
+[2025-05-13T15:42:47.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/yellowtripdata_dag.py took 1.021 seconds
